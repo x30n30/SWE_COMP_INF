@@ -131,7 +131,7 @@ begin
       srch = (t_s == 'Z')? nil : t_s.next
       trial = (t_a << srch).join(">>")
     end
-  elsif ret == 500
+  elsif ret == 50000
     srch = srch+'A'
     trial = (trial.nil? or trial.empty?)? srch : (trial + ">>" + srch)
   else
