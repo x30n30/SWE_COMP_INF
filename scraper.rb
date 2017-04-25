@@ -73,12 +73,12 @@ def scrape(data)
     r={
       "COMPANY_NAME"=>text(dd[0].xpath("a")),
       "COMPANY_NUMBER"=>text(dd[1].xpath(".")),
-           "Test"=>text(dd[2].xpath(".")),
-          "STATUS"=>text(dd[3].xpath(".")),
-          "STATUS2"=>text(dd[4].xpath(".")),
-          "STATUS3"=>text(dd[5].xpath(".")),
-          "STATUS4"=>text(dd[6].xpath(".")),   
-          "STATUS5"=>text(dd[7].xpath(".")),  
+           "Type"=>text(dd[2].xpath(".")),
+          "City"=>text(dd[3].xpath(".")),
+          "Empty_Field"=>text(dd[4].xpath(".")),
+          "Region"=>text(dd[5].xpath(".")),
+          "Type2"=>text(dd[6].xpath(".")),   
+          "STATUS"=>text(dd[7].xpath(".")),  
       "DOC"=>Time.now
           
     }
