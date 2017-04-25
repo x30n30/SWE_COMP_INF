@@ -77,10 +77,7 @@ def scrape(data)
           "STATUS"=>text(dd[3].xpath(".")),
           "STATUS2"=>text(dd[4].xpath(".")),
           "STATUS3"=>text(dd[5].xpath(".")),
-          "STATUS4"=>text(dd[6].xpath(".")),
-          "STATUS5"=>text(dd[7].xpath(".")),
-          "STATUS6"=>text(dd[8].xpath(".")),
-         
+          "STATUS4"=>text(dd[6].xpath(".")),       
       "DOC"=>Time.now
           
     }
