@@ -73,7 +73,7 @@ def scrape(data)
     r={
       "COMPANY_NAME"=>text(dd[0].xpath("a")),
       "COMPANY_NUMBER"=>text(dd[1].xpath(".")),
-          "STATUS"=>text(dd[3].xpath("a")),
+          "STATUS"=>text(dd[3].xpath(".")),
       "DOC"=>Time.now
           
     }
