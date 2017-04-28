@@ -84,7 +84,7 @@ def scrape(data)
     }
     records << r unless r['COMPANY_NAME'].nil? or r['COMPANY_NAME'].empty? 
   }
-  ScraperWiki.save_sqlite(unique_keys=['COMPANY_NUMBER'],records,table_name='SWDATA',verbose=2) unless records.length<=0
+  ScraperWiki.save_sqlite(unique_keys=['COMPANY_NAME'],records,table_name='SWDATA',verbose=2) unless records.length<=0
   return records.length
 end
 
